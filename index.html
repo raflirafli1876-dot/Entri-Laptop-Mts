@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entri Laptop</title>
+  <link rel="icon" type="image/png" href="laptop (1).png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: cornflowerblue;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    header h1 {
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    /* ✅ dua card di kanan–kiri, tengah ada jarak */
+    main {
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px; /* jarak tengah antar card */
+      flex-wrap: wrap;
+      max-width: 1300px;
+    }
+
+    /* ✅ tampilan card */
+    .card {
+      background-color: dodgerblue;
+      width: 550px;
+      height: 450px;
+      border-radius: 15px;
+      transition: 0.8s ease;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  /* tengah vertikal */
+      align-items: center;      /* tengah horizontal */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* judul di tengah card */
+    .card h3 {
+      font-size: 30px;
+      text-align: center;
+      color: white;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+      transition: opacity 0.5s ease;
+    }
+
+    /* daftar disembunyikan dulu */
+    .card ol,
+    .card ul {
+      list-style-position: inside;
+      text-align: left;
+      font-size: 22px;
+      color: white;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease;
+      position: absolute;
+      bottom: 30px;
+      width: 85%;
+    }
+
+    /* efek hover */
+    .card:hover h3 {
+      opacity: 0;
+    }
+
+    .card:hover ol,
+    .card:hover ul {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background-color: royalblue;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 20px;
+      margin: 100px 0 50px;
+      color: white;
+    }
+
+    footer a {
+      color: black;
+      text-decoration: none;
+      border: 1px solid;
+      border-radius: 7px;
+      background-color: rgb(0, 255, 89);
+      padding: 4px 10px 4px 10px;
+      transition: 0.2s;
+    }
+    footer a:hover{
+      background-color: dodgerblue ;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Entri Laptop Santri MTS Ma'had Al-Zaytun</h1>
+    <img src="laptop.png" alt="laptop icon">
+  </header>
+
+  <main>
+    <div class="card">
+      <h3>Tata Tertib Entri Laptop Di Pendopo</h3>
+      <ol>
+        <li>Membawa laptop menuju meja penitipan laptop</li>
+        <li>Menulis identitas diri di kertas identitas laptop</li>
+        <li>Menempel kertas di tas, laptop, dan charger laptop</li>
+        <li>Menulis dan tanda tangan di kertas entri laptop</li>
+        <li>Meletakkan laptop di belakang meja penitipan laptop</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>SOP Pengambilan Laptop</h3>
+      <ul>
+        <li>Hari penggunaan laptop untuk pembelajaran dalam kelas pada hari Senin sampai Jumat</li>
+        <li>Pengambilan laptop pukul 06.15–06.55 dan pengembalian pukul 13.30–13.50 (kecuali Jumat 09.40–10.00)</li>
+        <li>Masuk ke ruang laptop wajib menggunakan blazer/jas</li>
+        <li>Mengambil laptop dengan tertib; kelas 8 harus didampingi guru bila tidak ada jadwal</li>
+        <li>Laptop diletakkan di depan setelah briefing pagi atau sesuai instruksi guru</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Silakan tekan tombol di bawah untuk mendata laptop</p>
+    <a href="https://docs.google.com/forms/d/1ByTlwmq9SlhCRJLhHKgOJXv0Aq-FGL9z2m8Su16-l_s/edit">Link</a>
+  </footer>
+</body>
+</html>
